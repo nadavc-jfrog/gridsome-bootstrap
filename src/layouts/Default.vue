@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <Hero />
     <div id="content-wrapper">
       
       <slot/>
@@ -10,12 +11,14 @@
 
 <script>
 import Footer from '../components/Footer'
+import Hero from '../components/page/Hero'
 import Header from '../components/Header'
 
 export default {
   components: {
     Footer,
     Header,
+    Hero
   },
 }
 </script>
@@ -41,8 +44,10 @@ body {
 
 #content-wrapper {
   flex: 1 0 auto;
-  max-width: 950px;
+  max-width: 830px;
   width: 90vw;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 </style>
