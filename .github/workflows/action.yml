@@ -22,7 +22,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: nadavc-jfrog/gridsome-bootstrap@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist
