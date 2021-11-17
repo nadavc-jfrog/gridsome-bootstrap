@@ -30,7 +30,7 @@ jobs:
         run: npm install
         
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: nadavc-jfrog/gridsome-bootstrap
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_BRANCH: master
