@@ -31,6 +31,8 @@ $grid-breakpoints: (
   xl: 1300px
 );
 
+$title-color: #4e4e4e;
+
 $green: #40BE46;
 
 @media screen and (min-width: 830px) {
@@ -55,4 +57,13 @@ h1 {
   z-index: 0;
   left: 0;
   top: 0;
+}
+
+.bi-content {
+  flex: 1 0 auto;
+  max-width: 830px;
+  width: 90vw;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }

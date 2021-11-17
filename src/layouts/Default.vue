@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Hero />
-    <div id="content-wrapper">
+    <div id="content-wrapper" class="bi-content">
       
       <slot/>
     </div>
@@ -25,12 +25,13 @@ export default {
 
 
 <style lang="scss">
+@import '../assets/styles/main';
 body, html {
   height: 100%;
 }
 
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: 'Lucida Grande', sans-serif !important;
   margin:0;
   padding:0;
   line-height: 1.5;
@@ -41,13 +42,37 @@ body {
   flex-direction: column;
   height: 100%;
 }
-
 #content-wrapper {
-  flex: 1 0 auto;
-  max-width: 830px;
-  width: 90vw;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2;
+    color: $title-color;
+  }
+  img {
+    margin-bottom: 40px;
+  }
+
+  .youtube-iframe-wrapper {
+    width: 100%;
+    aspect-ratio: 1.61;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
+
+@include media-breakpoint-up(md) {
+  h2 {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
+
+
 </style>
