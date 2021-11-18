@@ -1,4 +1,4 @@
-#JFrog Build Info
+# JFrog Build Info
 ## Setup
 Clone the repo and run `yarn` in the root folder.
 ## Starting the dev Server
